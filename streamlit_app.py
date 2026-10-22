@@ -21,3 +21,8 @@ with st.expander('data'):
 
 with st.expander('Data visualization'):
   st.scatter_chart(data=df, x='bill_length_mm', y='body_mass_g', color='species')
+
+*data preparations
+with st.sidebar:
+  siland = st.selectbox'Island',('Biscon', 'Dream', 'Torgemsen'))
+

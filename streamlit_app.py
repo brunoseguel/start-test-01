@@ -5,5 +5,7 @@ st.title('🤖 test app ML')
 
 st.write('Primera prueba de *App* de ***Machine Learning***')
 
-df = pd.read_csv("https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv")
-st.dataframe(df)
+with st.expander('data'):
+  st.write('**Raw data**')
+  df = pd.read_csv("https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv")
+  st.dataframe(df)

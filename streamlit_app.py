@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 
@@ -17,3 +18,6 @@ with st.expander('data'):
   st.write('**y**')
   y = df.species
   y
+
+with st.expander('Data visualization'):
+  st.scatter_chart(data=df, x='boññ_lenght_mm', y='body_mass_g', 'color=species')

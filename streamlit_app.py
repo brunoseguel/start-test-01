@@ -24,5 +24,6 @@ with st.expander('Data visualization'):
 
 *data preparations
 with st.sidebar:
-  island = st.selectbox('Island',('Biscon', 'Dream', 'Torgemsen'))
+  st.header('Input features')
+  island = st.selectbox('Island', ('Biscoe', 'Dream', 'Torgersen'))
 

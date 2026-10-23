@@ -26,7 +26,7 @@ with st.expander('Data visualization'):
 with st.sidebar:
   st.header('Input features')
   island = st.selectbox('Island', ('Biscoe', 'Dream', 'Torgersen'))
-  gender = st.selectbox('gender',('male', 'female'))
+  sex = st.selectbox('gender',('male', 'female'))
   bill_length_mm = st.slider('Bill length (mm)', 32.1, 59.6, 43.9)
   bill_depth_mm = st.slider('Bill depth (mm)', 13.1, 21.5, 17.2)
   flipper_length_mm = st.slider('Fliper length (mm)', 172.0, 231.0, 201.0)
@@ -34,7 +34,7 @@ with st.sidebar:
 
   # Create a Dataframe for the input features
   data = {'island', island,
-        'gender', gender,
+        'sex', gender,
         'bill_length_mm', bill_length_mm,
         'bill_depth_mm', bill_depth_mm,
         'flipper_length_mm', flipper_length_mm,

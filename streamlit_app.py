@@ -34,10 +34,10 @@ with st.sidebar:
 
   # Create a Dataframe for the input features
   data = {'island', island
-        'gender', gender
-        'bill_length_mm', bill_length_mm
-        'bill_depth_mm', bill_depth_mm
-        'flipper_length_mm', flipper_length_mm
+        'gender', gender,
+        'bill_length_mm', bill_length_mm,
+        'bill_depth_mm', bill_depth_mm,
+        'flipper_length_mm', flipper_length_mm,
         'body_mass_g', body_mass_g}
   input_df = pd.Dataframe(data, index=[0])
 
